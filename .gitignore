@@ -1,5 +1,5 @@
 *.a
 *.o
 *~
-obj/
-JsonCpp/
+generated/
+

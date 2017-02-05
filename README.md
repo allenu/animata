@@ -214,3 +214,5 @@ Animata makes use of [JsonCpp](https://github.com/open-source-parsers/jsoncpp).
 ## License
 
 Animata is licensed under the MIT license. Please see LICENSE.txt for more details.
+
+If you use this library, please provide a link to this github page somewhere in your app and give proper credit to the author.
