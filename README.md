@@ -7,7 +7,13 @@ This is an work in progress.
 
 ## Installation
 
-TODO: Describe the installation process
+For a quick example, clone the repository with --recursive ([JsonCpp](https://github.com/open-source-parsers/jsoncpp) is used), then:
+
+```
+make test
+```
+
+Take a look at examples/console/main.cpp.
 
 
 ## Usage
