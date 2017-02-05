@@ -1,6 +1,6 @@
 # Animata
 
-Animata is a simple finite state machine library for use in 2D sprite-based games.
+Animata is a simple finite state machine library for use in 2D sprite-based games, written in C++.
 
 This is an work in progress.
 
