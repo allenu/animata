@@ -1,7 +1,7 @@
 
 #include <string>
-#include <animata.h>
 #include <stdio.h>
+#include <animata.h>
 #include <ActorDescriptionFromJsonDocument.h>
 
 int main(int argc, char *argv[]) {
