@@ -2,7 +2,7 @@
 
 Animata is a simple finite state machine library for use in 2D sprite-based games, written in C++.
 
-This is an work in progress.
+This is a work in progress.
 
 
 ## Installation
@@ -15,6 +15,15 @@ make test
 
 Take a look at examples/console/main.cpp.
 
+
+## How it works
+
+Animata can be used to drive the animation finite state machine for characters in a 2D game. It is made up of four parts:
+
+- The ActorDescription, which completely describes the state machine for a given in-game 'actor' (aka a character in the game world). This describes the various states the actor can be in as well as "directions" which would cause an actor to move from one state to another. Each state is made up of one or more animation frames.
+- The current ActorState, which describes the state of the in-game actor.
+- The input "directions" given by a player via some input system (joy stick, keyboard, etc. but it can also be AI) .
+- The transform function, NextActorState(), which takes all three of the above inputs and does the necessary matching against states and transitions defined ni the ActorDescription to come up with the next ActorState for the in-game actor.
 
 ## Usage
 
