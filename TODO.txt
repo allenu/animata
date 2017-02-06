@@ -1,0 +1,12 @@
+
+[ ] Console example
+    [ ] Make console example interactive so it can be used for testing. Transform each frame by first asking
+        the user to enter zero or more input directions.
+    [ ] Make console example load JSON file.
+    [ ] Provide ruby script to convert YAML to JSON to aid in testing.
+
+[ ] Add Mac example
+    [ ] Provide unit test targets
+    [ ] Have simple interactive example that uses two NSImageView to represent PC and NPC.
+    [ ] Have NPC driven by simple AI.
+

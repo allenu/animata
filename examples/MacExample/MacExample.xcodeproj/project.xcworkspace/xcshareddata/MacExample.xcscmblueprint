@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4CAA0F3C582BF5745B44C4377A03A698990B2936",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4CAA0F3C582BF5745B44C4377A03A698990B2936" : 9223372036854775807,
+    "7A197CB7B32EDB86AEA5CFBEAF5A15B1DBED1C37" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6E2584E0-7B0C-42F9-9126-0F5273B55376",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4CAA0F3C582BF5745B44C4377A03A698990B2936" : "animata\/",
+    "7A197CB7B32EDB86AEA5CFBEAF5A15B1DBED1C37" : "animata\/jsoncpp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MacExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "examples\/MacExample\/MacExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:allenu\/animata.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4CAA0F3C582BF5745B44C4377A03A698990B2936"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/open-source-parsers\/jsoncpp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7A197CB7B32EDB86AEA5CFBEAF5A15B1DBED1C37"
+    }
+  ]
+}

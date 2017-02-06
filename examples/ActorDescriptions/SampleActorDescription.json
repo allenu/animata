@@ -1,0 +1,79 @@
+{
+	"name" : "Steve",
+	"states" : {
+		"first state" : {
+			"default_state" : true,
+			"frames" : [
+						{ "sprite" : "sprite 1", "attr 1" : 555 },
+						{ "sprite" : "sprite 2", "attr 2" : 432 },
+				{ "sprite" : "sprite 3" },
+				{ "sprite" : "sprite 4" }
+			],
+			"attack" : 69,
+			"defense" : 42
+		},
+		"second state" : {
+			"frames" : [
+				{ "sprite" : "sprite 5" },
+				{ "sprite" : "sprite 6" },
+				{ "sprite" : "sprite 7" }
+			],
+			"dog" : 1,
+			"cat" : 55.444,
+			"next" : "second state"
+		},
+		"third state" : {
+			"frames" : [
+						{ "sprite" : "sprite 8" },
+						{ "sprite" : "sprite 9" },
+						{ "sprite" : "sprite 10" },
+						{ "sprite" : "sprite 11" },
+						{ "sprite" : "sprite 12" }
+						],
+			"food" : 1234567,
+			"bartender" : "very good",
+			"next" : "first state"
+		}
+	},
+	"groups" : {
+		"first group" : [
+						 "first state"
+						 ],
+		"first and second group" : [
+						 "first state",
+						 "second state"
+						 ],
+		"second group" : [
+		"second state"
+		]
+	},
+	"transitions": [
+					{
+					"from": "first group",
+					"input": [
+							  "abc",
+							  "def"
+							  ],
+					"to" : "second state",
+					"foo" : "bar"
+					},
+					
+					{
+					"from": "first state",
+					"input": [
+							  "def"
+							  ],
+					"to" : "third state"
+					},
+
+					
+					{
+					"from": "second state",
+					"input": [
+							  "xyz"
+							  ],
+					"to" : "first state"
+					}
+					]
+
+}

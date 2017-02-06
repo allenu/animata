@@ -1,0 +1,5 @@
+{
+	"int value" : 1234,
+	"double value" : 3.14,
+	"string value" : "some string value here"
+}
