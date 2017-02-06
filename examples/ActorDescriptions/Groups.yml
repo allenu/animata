@@ -1,0 +1,60 @@
+---
+name: Steve
+states:
+  red:
+    frames:
+      - sprite: s1
+      - sprite: s2
+      - sprite: s3
+    default_state: true
+    next: green
+  green:
+    frames:
+      - sprite: s4
+      - sprite: s5
+    next: blue
+  blue:
+    frames:
+      - sprite: s6
+      - sprite: s9
+    next: apple
+  apple:
+    frames:
+      - sprite: apple1
+      - sprite: apple2
+    next: banana
+  banana:
+    frames:
+      - sprite: banana1
+      - sprite: banana2
+    next: red
+  any_goal:
+    frames:
+      - sprite: any_goal
+  fruit_goal:
+    frames:
+      - sprite: fruit_goal
+  color_goal:
+    frames:
+      - sprite: color_goal
+groups:
+  color:
+    - red
+    - green
+    - blue
+  fruit:
+    - apple
+    - banana
+transitions:
+  - from: any
+    to: any_goal
+    input:
+      - any_goal
+  - from: fruit
+    to: fruit_goal
+    input:
+      - fruit_goal
+  - from: color
+    to: color_goal
+    input:
+      - color_goal

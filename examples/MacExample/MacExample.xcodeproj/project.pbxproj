@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7D294CD1E482A9E0071B4DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D294CC1E482A9E0071B4DC /* AppDelegate.m */; };
+		B7D294D01E482A9E0071B4DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D294CF1E482A9E0071B4DC /* main.m */; };
+		B7D294D31E482A9E0071B4DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D294D21E482A9E0071B4DC /* ViewController.m */; };
+		B7D294D51E482A9E0071B4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D294D41E482A9E0071B4DC /* Assets.xcassets */; };
+		B7D294D81E482A9E0071B4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D294D61E482A9E0071B4DC /* Main.storyboard */; };
+		B7D294E31E482A9E0071B4DC /* MacExampleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7D294E21E482A9E0071B4DC /* MacExampleTests.mm */; };
+		B7D294F21E482ACE0071B4DC /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D294F11E482ACE0071B4DC /* jsoncpp.cpp */; };
+		B7D294FE1E482AE20071B4DC /* ActorStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D294FD1E482AE20071B4DC /* ActorStateMachine.cpp */; };
+		B7D295121E482E1C0071B4DC /* Groups.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295021E482E1C0071B4DC /* Groups.json */; };
+		B7D295131E482E1C0071B4DC /* SimpleExample.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295031E482E1C0071B4DC /* SimpleExample.json */; };
+		B7D295141E482E1C0071B4DC /* TestNoResetOnTransition.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295041E482E1C0071B4DC /* TestNoResetOnTransition.json */; };
+		B7D295151E482E1C0071B4DC /* ThreeStateActor.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295051E482E1C0071B4DC /* ThreeStateActor.json */; };
+		B7D295161E482E1C0071B4DC /* UninterruptibleState.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295061E482E1C0071B4DC /* UninterruptibleState.json */; };
+		B7D295191E482E1C0071B4DC /* PropertySet_Empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295091E482E1C0071B4DC /* PropertySet_Empty.json */; };
+		B7D2951A1E482E1C0071B4DC /* PropertySet_Normal.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D2950A1E482E1C0071B4DC /* PropertySet_Normal.json */; };
+		B7D2951B1E482E1C0071B4DC /* SampleActorDescription.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D2950B1E482E1C0071B4DC /* SampleActorDescription.json */; };
+		B7D295261E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D295221E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp */; };
+		B7D295271E4830450071B4DC /* PropertySetFromJsonDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D295241E4830450071B4DC /* PropertySetFromJsonDictionary.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7D294DF1E482A9E0071B4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7D294C01E482A9E0071B4DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7D294C71E482A9E0071B4DC;
+			remoteInfo = MacExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7D294C81E482A9E0071B4DC /* MacExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D294CB1E482A9E0071B4DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7D294CC1E482A9E0071B4DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7D294CF1E482A9E0071B4DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7D294D11E482A9E0071B4DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B7D294D21E482A9E0071B4DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7D294D41E482A9E0071B4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7D294D71E482A9E0071B4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7D294D91E482A9E0071B4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D294DE1E482A9E0071B4DC /* MacExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D294E21E482A9E0071B4DC /* MacExampleTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MacExampleTests.mm; sourceTree = "<group>"; };
+		B7D294E41E482A9E0071B4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D294EF1E482ACE0071B4DC /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
+		B7D294F01E482ACE0071B4DC /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		B7D294F11E482ACE0071B4DC /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
+		B7D294F41E482AD80071B4DC /* ActorDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorDescription.h; sourceTree = "<group>"; };
+		B7D294F51E482AD80071B4DC /* ActorState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorState.h; sourceTree = "<group>"; };
+		B7D294F61E482AD80071B4DC /* ActorStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorStateMachine.h; sourceTree = "<group>"; };
+		B7D294F71E482AD80071B4DC /* animata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = animata.h; sourceTree = "<group>"; };
+		B7D294F81E482AD80071B4DC /* AnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationState.h; sourceTree = "<group>"; };
+		B7D294F91E482AD80071B4DC /* AnimationStateGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStateGroup.h; sourceTree = "<group>"; };
+		B7D294FA1E482AD80071B4DC /* AnimationStateTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStateTransition.h; sourceTree = "<group>"; };
+		B7D294FB1E482AD80071B4DC /* PropertySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySet.h; sourceTree = "<group>"; };
+		B7D294FD1E482AE20071B4DC /* ActorStateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ActorStateMachine.cpp; sourceTree = "<group>"; };
+		B7D295021E482E1C0071B4DC /* Groups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Groups.json; sourceTree = "<group>"; };
+		B7D295031E482E1C0071B4DC /* SimpleExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SimpleExample.json; sourceTree = "<group>"; };
+		B7D295041E482E1C0071B4DC /* TestNoResetOnTransition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestNoResetOnTransition.json; sourceTree = "<group>"; };
+		B7D295051E482E1C0071B4DC /* ThreeStateActor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ThreeStateActor.json; sourceTree = "<group>"; };
+		B7D295061E482E1C0071B4DC /* UninterruptibleState.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UninterruptibleState.json; sourceTree = "<group>"; };
+		B7D295091E482E1C0071B4DC /* PropertySet_Empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PropertySet_Empty.json; sourceTree = "<group>"; };
+		B7D2950A1E482E1C0071B4DC /* PropertySet_Normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PropertySet_Normal.json; sourceTree = "<group>"; };
+		B7D2950B1E482E1C0071B4DC /* SampleActorDescription.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleActorDescription.json; sourceTree = "<group>"; };
+		B7D295221E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ActorDescriptionFromJsonDocument.cpp; sourceTree = "<group>"; };
+		B7D295231E4830450071B4DC /* ActorDescriptionFromJsonDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorDescriptionFromJsonDocument.h; sourceTree = "<group>"; };
+		B7D295241E4830450071B4DC /* PropertySetFromJsonDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropertySetFromJsonDictionary.cpp; sourceTree = "<group>"; };
+		B7D295251E4830450071B4DC /* PropertySetFromJsonDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySetFromJsonDictionary.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7D294C51E482A9E0071B4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D294DB1E482A9E0071B4DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7D294BF1E482A9E0071B4DC = {
+			isa = PBXGroup;
+			children = (
+				B7D294F31E482AD80071B4DC /* public */,
+				B7D294FC1E482AE20071B4DC /* src */,
+				B7D295211E4830450071B4DC /* helpers */,
+				B7D294ED1E482ACE0071B4DC /* dist */,
+				B7D294CA1E482A9E0071B4DC /* MacExample */,
+				B7D294E11E482A9E0071B4DC /* MacExampleTests */,
+				B7D294C91E482A9E0071B4DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7D294C91E482A9E0071B4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294C81E482A9E0071B4DC /* MacExample.app */,
+				B7D294DE1E482A9E0071B4DC /* MacExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7D294CA1E482A9E0071B4DC /* MacExample */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294CB1E482A9E0071B4DC /* AppDelegate.h */,
+				B7D294CC1E482A9E0071B4DC /* AppDelegate.m */,
+				B7D294D11E482A9E0071B4DC /* ViewController.h */,
+				B7D294D21E482A9E0071B4DC /* ViewController.m */,
+				B7D294D41E482A9E0071B4DC /* Assets.xcassets */,
+				B7D294D61E482A9E0071B4DC /* Main.storyboard */,
+				B7D294D91E482A9E0071B4DC /* Info.plist */,
+				B7D294CE1E482A9E0071B4DC /* Supporting Files */,
+			);
+			path = MacExample;
+			sourceTree = "<group>";
+		};
+		B7D294CE1E482A9E0071B4DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294CF1E482A9E0071B4DC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7D294E11E482A9E0071B4DC /* MacExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294FF1E482E1C0071B4DC /* ActorDescriptions */,
+				B7D294E21E482A9E0071B4DC /* MacExampleTests.mm */,
+				B7D294E41E482A9E0071B4DC /* Info.plist */,
+			);
+			path = MacExampleTests;
+			sourceTree = "<group>";
+		};
+		B7D294ED1E482ACE0071B4DC /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294EE1E482ACE0071B4DC /* json */,
+				B7D294F11E482ACE0071B4DC /* jsoncpp.cpp */,
+			);
+			name = dist;
+			path = ../../jsoncpp/dist;
+			sourceTree = "<group>";
+		};
+		B7D294EE1E482ACE0071B4DC /* json */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294EF1E482ACE0071B4DC /* json-forwards.h */,
+				B7D294F01E482ACE0071B4DC /* json.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		B7D294F31E482AD80071B4DC /* public */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294F41E482AD80071B4DC /* ActorDescription.h */,
+				B7D294F51E482AD80071B4DC /* ActorState.h */,
+				B7D294F61E482AD80071B4DC /* ActorStateMachine.h */,
+				B7D294F71E482AD80071B4DC /* animata.h */,
+				B7D294F81E482AD80071B4DC /* AnimationState.h */,
+				B7D294F91E482AD80071B4DC /* AnimationStateGroup.h */,
+				B7D294FA1E482AD80071B4DC /* AnimationStateTransition.h */,
+				B7D294FB1E482AD80071B4DC /* PropertySet.h */,
+			);
+			name = public;
+			path = ../../public;
+			sourceTree = "<group>";
+		};
+		B7D294FC1E482AE20071B4DC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B7D294FD1E482AE20071B4DC /* ActorStateMachine.cpp */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		B7D294FF1E482E1C0071B4DC /* ActorDescriptions */ = {
+			isa = PBXGroup;
+			children = (
+				B7D295011E482E1C0071B4DC /* generated */,
+				B7D295091E482E1C0071B4DC /* PropertySet_Empty.json */,
+				B7D2950A1E482E1C0071B4DC /* PropertySet_Normal.json */,
+				B7D2950B1E482E1C0071B4DC /* SampleActorDescription.json */,
+			);
+			name = ActorDescriptions;
+			path = ../../ActorDescriptions;
+			sourceTree = "<group>";
+		};
+		B7D295011E482E1C0071B4DC /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				B7D295021E482E1C0071B4DC /* Groups.json */,
+				B7D295031E482E1C0071B4DC /* SimpleExample.json */,
+				B7D295041E482E1C0071B4DC /* TestNoResetOnTransition.json */,
+				B7D295051E482E1C0071B4DC /* ThreeStateActor.json */,
+				B7D295061E482E1C0071B4DC /* UninterruptibleState.json */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		B7D295211E4830450071B4DC /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B7D295221E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp */,
+				B7D295231E4830450071B4DC /* ActorDescriptionFromJsonDocument.h */,
+				B7D295241E4830450071B4DC /* PropertySetFromJsonDictionary.cpp */,
+				B7D295251E4830450071B4DC /* PropertySetFromJsonDictionary.h */,
+			);
+			name = helpers;
+			path = ../../helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7D294C71E482A9E0071B4DC /* MacExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D294E71E482A9E0071B4DC /* Build configuration list for PBXNativeTarget "MacExample" */;
+			buildPhases = (
+				B7D294C41E482A9E0071B4DC /* Sources */,
+				B7D294C51E482A9E0071B4DC /* Frameworks */,
+				B7D294C61E482A9E0071B4DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacExample;
+			productName = MacExample;
+			productReference = B7D294C81E482A9E0071B4DC /* MacExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7D294DD1E482A9E0071B4DC /* MacExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D294EA1E482A9E0071B4DC /* Build configuration list for PBXNativeTarget "MacExampleTests" */;
+			buildPhases = (
+				B7D294DA1E482A9E0071B4DC /* Sources */,
+				B7D294DB1E482A9E0071B4DC /* Frameworks */,
+				B7D294DC1E482A9E0071B4DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7D294E01E482A9E0071B4DC /* PBXTargetDependency */,
+			);
+			name = MacExampleTests;
+			productName = MacExampleTests;
+			productReference = B7D294DE1E482A9E0071B4DC /* MacExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7D294C01E482A9E0071B4DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ussher Press";
+				TargetAttributes = {
+					B7D294C71E482A9E0071B4DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NQ4H433LH4;
+						ProvisioningStyle = Automatic;
+					};
+					B7D294DD1E482A9E0071B4DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NQ4H433LH4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7D294C71E482A9E0071B4DC;
+					};
+				};
+			};
+			buildConfigurationList = B7D294C31E482A9E0071B4DC /* Build configuration list for PBXProject "MacExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7D294BF1E482A9E0071B4DC;
+			productRefGroup = B7D294C91E482A9E0071B4DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7D294C71E482A9E0071B4DC /* MacExample */,
+				B7D294DD1E482A9E0071B4DC /* MacExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7D294C61E482A9E0071B4DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D294D51E482A9E0071B4DC /* Assets.xcassets in Resources */,
+				B7D294D81E482A9E0071B4DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D294DC1E482A9E0071B4DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D295141E482E1C0071B4DC /* TestNoResetOnTransition.json in Resources */,
+				B7D295161E482E1C0071B4DC /* UninterruptibleState.json in Resources */,
+				B7D295121E482E1C0071B4DC /* Groups.json in Resources */,
+				B7D2951B1E482E1C0071B4DC /* SampleActorDescription.json in Resources */,
+				B7D2951A1E482E1C0071B4DC /* PropertySet_Normal.json in Resources */,
+				B7D295131E482E1C0071B4DC /* SimpleExample.json in Resources */,
+				B7D295191E482E1C0071B4DC /* PropertySet_Empty.json in Resources */,
+				B7D295151E482E1C0071B4DC /* ThreeStateActor.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7D294C41E482A9E0071B4DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D294FE1E482AE20071B4DC /* ActorStateMachine.cpp in Sources */,
+				B7D294D31E482A9E0071B4DC /* ViewController.m in Sources */,
+				B7D294F21E482ACE0071B4DC /* jsoncpp.cpp in Sources */,
+				B7D294D01E482A9E0071B4DC /* main.m in Sources */,
+				B7D294CD1E482A9E0071B4DC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D294DA1E482A9E0071B4DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D295271E4830450071B4DC /* PropertySetFromJsonDictionary.cpp in Sources */,
+				B7D294E31E482A9E0071B4DC /* MacExampleTests.mm in Sources */,
+				B7D295261E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7D294E01E482A9E0071B4DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7D294C71E482A9E0071B4DC /* MacExample */;
+			targetProxy = B7D294DF1E482A9E0071B4DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7D294D61E482A9E0071B4DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7D294D71E482A9E0071B4DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7D294E51E482A9E0071B4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7D294E61E482A9E0071B4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B7D294E81E482A9E0071B4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NQ4H433LH4;
+				INFOPLIST_FILE = MacExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ussherpress.MacExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7D294E91E482A9E0071B4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NQ4H433LH4;
+				INFOPLIST_FILE = MacExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ussherpress.MacExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B7D294EB1E482A9E0071B4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NQ4H433LH4;
+				INFOPLIST_FILE = MacExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ussherpress.MacExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacExample.app/Contents/MacOS/MacExample";
+			};
+			name = Debug;
+		};
+		B7D294EC1E482A9E0071B4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NQ4H433LH4;
+				INFOPLIST_FILE = MacExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ussherpress.MacExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacExample.app/Contents/MacOS/MacExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7D294C31E482A9E0071B4DC /* Build configuration list for PBXProject "MacExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D294E51E482A9E0071B4DC /* Debug */,
+				B7D294E61E482A9E0071B4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D294E71E482A9E0071B4DC /* Build configuration list for PBXNativeTarget "MacExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D294E81E482A9E0071B4DC /* Debug */,
+				B7D294E91E482A9E0071B4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B7D294EA1E482A9E0071B4DC /* Build configuration list for PBXNativeTarget "MacExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D294EB1E482A9E0071B4DC /* Debug */,
+				B7D294EC1E482A9E0071B4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7D294C01E482A9E0071B4DC /* Project object */;
+}

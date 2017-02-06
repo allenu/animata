@@ -20,10 +20,15 @@ Take a look at examples/console/main.cpp.
 
 Animata can be used to drive the animation finite state machine for characters in a 2D game. It is made up of four parts:
 
-- The ActorDescription, which completely describes the state machine for a given in-game 'actor' (aka a character in the game world). This describes the various states the actor can be in as well as "directions" which would cause an actor to move from one state to another. Each state is made up of one or more animation frames.
+- The ActorDescription, which completely describes the state machine for a given in-game 'actor' (aka a character in the game world). This describes the various states the actor can be in as well as "directions" which would cause an actor to move from one state to another (called "transitions" in this system). Each state is made up of one or more animation frames. Each frame describes how the actor appears in the game and is customizable by the client.
 - The current ActorState, which describes the state of the in-game actor.
-- The input "directions" given by a player via some input system (joy stick, keyboard, etc. but it can also be AI) .
-- The transform function, NextActorState(), which takes all three of the above inputs and does the necessary matching against states and transitions defined ni the ActorDescription to come up with the next ActorState for the in-game actor.
+- The input "directions" given by a player via some input system (joystick, keyboard, etc. but it can also be AI) .
+- The transform function, NextActorState(), which takes all three of the above inputs and does the necessary matching against states and transitions defined in the ActorDescription to come up with the next ActorState for the in-game actor.
+
+On each frame in your game engine, you would call NextActorState() on each actor in your game world to derive its next actor state. From this actor state, you can obtain which sprite to display on-screen. The previous frame's actor states are used to derive the following frame's new actor states.
+
+Animata fits into a larger game engine system and is not designed to handle physics, input, rendering, business logic (i.e. game rules), or assets. Those are orthogonal requirements that can be satisfied with other components.
+
 
 ## Usage
 

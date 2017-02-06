@@ -1,0 +1,29 @@
+states:
+  first state:
+    frames:
+      - sprite: s1
+      - sprite: s2
+      - sprite: s3
+    default_state: true
+    next: uninterruptible
+  uninterruptible:
+    frames:
+      - sprite: s4
+      - sprite: s5
+    next: third state
+    uninterruptible: true
+  third state:
+    frames:
+      - sprite: s6
+      - sprite: s7
+      - sprite: s8
+      - sprite: s9
+  goal:
+    frames:
+      - sprite: g1
+      - sprite: g2
+transitions:
+  - from: any
+    to: goal
+    input:
+      - goal

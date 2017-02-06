@@ -1,0 +1,27 @@
+states:
+  red:
+    frames:
+      - sprite: red1
+      - sprite: red2
+      - sprite: red3
+      - sprite: red4
+    default_state: true
+    next: green
+  green:
+    frames:
+      - sprite: green1
+      - sprite: green2
+      - sprite: green3
+      - sprite: green4
+  goal:
+    frames:
+      - sprite: goal1
+      - sprite: goal2
+      - sprite: goal3
+      - sprite: goal4
+transitions:
+  - from: any
+    to: goal
+    input:
+      - goal
+    do_not_reset_frame_index: true

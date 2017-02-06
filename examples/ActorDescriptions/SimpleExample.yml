@@ -1,0 +1,47 @@
+states:
+  standing:
+    frames:
+      - sprite: standing1
+      - sprite: standing2
+      - sprite: standing3
+    default_state: true
+    next: standing
+  punching:
+    frames:
+      - sprite: punching1
+        attack: 10
+      - sprite: punching2
+  kicking:
+    frames:
+      - sprite: kicking1
+        attack: 2
+      - sprite: kicking2
+  hurt:
+    frames:
+      - sprite: hurt1
+      - sprite: hurt2
+    uninterruptible: true
+
+groups:
+  attacking:
+    - punching
+    - kicking
+
+transitions:
+  - from: any
+    excluding:
+      - hurt
+      - attacking
+    to: punching
+    input:
+      - punch
+  - from: any
+    excluding: hurt
+    to: kicking
+    input:
+      - kick
+  - from: any
+    excluding: hurt
+    to: hurt
+    input:
+      - hurt
