@@ -35,12 +35,10 @@ ActorState NextActorState(const ActorDescription & actorDescription,
 	// Get groups previousActorState.state_name is in.
 	auto groups = FilterGroupsThatIncludeState(actorDescription.stateGroups, previousActorState.state_name);
 	
-//	int ignore_inputs_until_frame_index = 0;
 	auto previousAnimationStateIt = actorDescription.states.find(previousActorState.state_name);
 	const AnimationState *previousAnimationState = nullptr;
 	if (previousAnimationStateIt != actorDescription.states.end()) {
 		previousAnimationState = &previousAnimationStateIt->second;
-//		ignore_inputs_until_frame_index = previousAnimationStateIt->second.properties.IntWithName("ignore_inputs_until_frame_index");
 	} else {
 		// We couldn't find that state by name!
 		assert(false);

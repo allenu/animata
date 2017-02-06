@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		B7D294CD1E482A9E0071B4DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D294CC1E482A9E0071B4DC /* AppDelegate.m */; };
 		B7D294D01E482A9E0071B4DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D294CF1E482A9E0071B4DC /* main.m */; };
-		B7D294D31E482A9E0071B4DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D294D21E482A9E0071B4DC /* ViewController.m */; };
-		B7D294D51E482A9E0071B4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D294D41E482A9E0071B4DC /* Assets.xcassets */; };
+		B7D294D31E482A9E0071B4DC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7D294D21E482A9E0071B4DC /* ViewController.mm */; };
 		B7D294D81E482A9E0071B4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D294D61E482A9E0071B4DC /* Main.storyboard */; };
 		B7D294E31E482A9E0071B4DC /* MacExampleTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7D294E21E482A9E0071B4DC /* MacExampleTests.mm */; };
 		B7D294F21E482ACE0071B4DC /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D294F11E482ACE0071B4DC /* jsoncpp.cpp */; };
@@ -25,6 +24,11 @@
 		B7D2951B1E482E1C0071B4DC /* SampleActorDescription.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D2950B1E482E1C0071B4DC /* SampleActorDescription.json */; };
 		B7D295261E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D295221E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp */; };
 		B7D295271E4830450071B4DC /* PropertySetFromJsonDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D295241E4830450071B4DC /* PropertySetFromJsonDictionary.cpp */; };
+		B7D295281E4835930071B4DC /* SimpleExample.json in Resources */ = {isa = PBXBuildFile; fileRef = B7D295031E482E1C0071B4DC /* SimpleExample.json */; };
+		B7D295291E4838340071B4DC /* ActorDescriptionFromJsonDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D295221E4830450071B4DC /* ActorDescriptionFromJsonDocument.cpp */; };
+		B7D2952A1E4838360071B4DC /* PropertySetFromJsonDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D295241E4830450071B4DC /* PropertySetFromJsonDictionary.cpp */; };
+		B7D2952D1E48455A0071B4DC /* PixelatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D2952C1E48455A0071B4DC /* PixelatedImageView.m */; };
+		B7D2952F1E484C2A0071B4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D2952E1E484C2A0071B4DC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +47,7 @@
 		B7D294CC1E482A9E0071B4DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B7D294CF1E482A9E0071B4DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7D294D11E482A9E0071B4DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B7D294D21E482A9E0071B4DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B7D294D41E482A9E0071B4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7D294D21E482A9E0071B4DC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		B7D294D71E482A9E0071B4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7D294D91E482A9E0071B4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7D294DE1E482A9E0071B4DC /* MacExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +77,9 @@
 		B7D295231E4830450071B4DC /* ActorDescriptionFromJsonDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorDescriptionFromJsonDocument.h; sourceTree = "<group>"; };
 		B7D295241E4830450071B4DC /* PropertySetFromJsonDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropertySetFromJsonDictionary.cpp; sourceTree = "<group>"; };
 		B7D295251E4830450071B4DC /* PropertySetFromJsonDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySetFromJsonDictionary.h; sourceTree = "<group>"; };
+		B7D2952B1E48455A0071B4DC /* PixelatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelatedImageView.h; sourceTree = "<group>"; };
+		B7D2952C1E48455A0071B4DC /* PixelatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixelatedImageView.m; sourceTree = "<group>"; };
+		B7D2952E1E484C2A0071B4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +128,13 @@
 				B7D294CB1E482A9E0071B4DC /* AppDelegate.h */,
 				B7D294CC1E482A9E0071B4DC /* AppDelegate.m */,
 				B7D294D11E482A9E0071B4DC /* ViewController.h */,
-				B7D294D21E482A9E0071B4DC /* ViewController.m */,
-				B7D294D41E482A9E0071B4DC /* Assets.xcassets */,
+				B7D294D21E482A9E0071B4DC /* ViewController.mm */,
+				B7D2952E1E484C2A0071B4DC /* Assets.xcassets */,
 				B7D294D61E482A9E0071B4DC /* Main.storyboard */,
 				B7D294D91E482A9E0071B4DC /* Info.plist */,
 				B7D294CE1E482A9E0071B4DC /* Supporting Files */,
+				B7D2952B1E48455A0071B4DC /* PixelatedImageView.h */,
+				B7D2952C1E48455A0071B4DC /* PixelatedImageView.m */,
 			);
 			path = MacExample;
 			sourceTree = "<group>";
@@ -313,8 +321,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D294D51E482A9E0071B4DC /* Assets.xcassets in Resources */,
 				B7D294D81E482A9E0071B4DC /* Main.storyboard in Resources */,
+				B7D2952F1E484C2A0071B4DC /* Assets.xcassets in Resources */,
+				B7D295281E4835930071B4DC /* SimpleExample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D294FE1E482AE20071B4DC /* ActorStateMachine.cpp in Sources */,
-				B7D294D31E482A9E0071B4DC /* ViewController.m in Sources */,
+				B7D294D31E482A9E0071B4DC /* ViewController.mm in Sources */,
 				B7D294F21E482ACE0071B4DC /* jsoncpp.cpp in Sources */,
+				B7D2952A1E4838360071B4DC /* PropertySetFromJsonDictionary.cpp in Sources */,
+				B7D295291E4838340071B4DC /* ActorDescriptionFromJsonDocument.cpp in Sources */,
+				B7D2952D1E48455A0071B4DC /* PixelatedImageView.m in Sources */,
 				B7D294D01E482A9E0071B4DC /* main.m in Sources */,
 				B7D294CD1E482A9E0071B4DC /* AppDelegate.m in Sources */,
 			);
@@ -540,6 +552,7 @@
 				B7D294E91E482A9E0071B4DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7D294EA1E482A9E0071B4DC /* Build configuration list for PBXNativeTarget "MacExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +561,7 @@
 				B7D294EC1E482A9E0071B4DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

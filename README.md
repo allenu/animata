@@ -212,7 +212,12 @@ transitions:
 
 ## PropertySet
 
-Animata uses PropertySet to 
+Animata uses PropertySet as a key-value dictionary.
+
+
+## MacExample
+
+![MacExample screenshot](https://raw.githubusercontent.com/allenu/animata/screenshots/AnimataMacScreenshot.png)
 
 
 ## Contributing

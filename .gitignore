@@ -1,5 +1,7 @@
 *.a
 *.o
 *~
+xcuserdata
+UserInterfaceState.xcuserstate
 generated/
 
